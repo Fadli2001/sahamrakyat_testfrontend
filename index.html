@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="" width="20%">
+      </div>
+      <p>You don't have an account yet, please create a new account</p>
+    </header>
+
+    <section>
+      <div class="title-create">
+        <p>Create new account</p>
+      </div>
+      <div class="title content">
+        <div class="titles">
+
+          <p>Title</p>         
+          <label class="container">
+            <div class="check-box">
+              <input type="checkbox" id="check-tittle">
+              Mrs
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="check-tittle">
+              Ms
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="check-tittle" >
+              Mom
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="check-tittle" >
+              Mr
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="check-tittle" >
+              Dr
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="form content">
+          <form>
+            <div class="last-name form-content">
+              <label for="">Last name</label>
+              <input class="form-control" type="text" placeholder="Last Name" id="lastName" name="lastName">
+            </div>
+            <div class="first-name form-content">
+              <label for="">First name</label>
+              <input class="form-control" type="text" placeholder="First Name" id="firstName" name="firstName">            
+            </div>       
+            <div class="phone-number form-content">
+              <label>Mobile Phone Number</label>
+              <div class="phone-number-content">                
+                <div class="input-group mb-3">               
+                  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="phoneNumber">
+                </div>
+              </div>
+            </div>       
+          </form>
+      </div>
+      <div class="address">
+        <div class="title-address">
+          <h4>Address</h4>
+        </div>
+        <form>
+          <div class="form-content">
+            <label for="">Address</label>
+            <input class="form-control" type="text" placeholder="Address" id="address">
+          </div>                       
+          <div class="country">
+            <div class="form-content">
+              <label for="">Country/Location</label>
+              <select class="form-control" id="country" name="country">
+                <option value="" disabled selected>Country/Location</option>
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+            </div>
+            <div class="form-content">
+              <label for="">Province/District</label>
+              <select class="form-control" id="country" name="country">
+                <option value="" disabled selected>Province/District</option>
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+            </div>
+          </div>
+          <div class="country">
+            <div class="form-content">
+              <label for="">Email Address</label>
+              <input class="form-control" type="text" placeholder="Email Address">
+            </div>
+            <div class="form-content">
+              <div class="birth">
+                <div class="birth-content">
+                  <label for="">Date of birth</label>
+                  <input class="form-control" type="date">
+                </div>
+                
+                
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="privacy-note">
+        <h3>Standard Privacy Note</h3>
+        <p>I Warrant that the above information is true and correct, I understand that failure to answer all questions listed in this application form way prevent L'OCCITANE from processing my application; and L'OCCITANE my refuse to accept this application in the right of my individual circumstance</p>
+        <p>I understand that the information collected will be used and retained by L'ACCITANE for the purpose of(i) my applicationof membership program of L'OCCITANE (ii) providing member-exclusive services; and (iii) the daily management operation and maintanance of membership account at L'OCCITANE.</p>
+        <p>I understand that it is necessary for me to provide L'OCCITANE with data in connection with the privilage. Failure to provide such data my result in L'OCCITANE stores or official webiste</p>
+        <p>L'OCCITANE reserves the right to change any of the therms and conditions without prior notice. Changes will be posted on signage placed at L'OCCITANE stores or official website</p>
+        <p>I understand that L'OCCITANE may use my personal information of the purpose of providing of promoting services/products made available by L'OCCATANE. To choose wheter to receive any promotional information sent by L'OCCATANE please tick the box below
+        </p>
+        <p>I want receive information of communication from L'OCCITANE.</p>
+
+        <div class="togle">
+          <div class="togle-content">
+            <span>SMS & Mobile Call</span>  
+            <label class="switch" for="sms">              
+                <input type="checkbox" id="sms" />
+                <div class="slider round"></div>
+              </label>          
+          </div>
+          <div class="togle-content">
+            <span>Emailing</span>  
+            <label class="switch" for="emailing">              
+                <input type="checkbox" id="emailing" />
+                <div class="slider round"></div>
+              </label>          
+          </div>
+          <div class="togle-content">
+            <span>Mailing</span>  
+            <label class="switch" for="mailing">              
+                <input type="checkbox" id="mailing" />
+                <div class="slider round"></div>
+              </label>          
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="approve">        
+          <input type="checkbox">
+          <span>I have read and understand the above terms conditions and here by agree that i will be bounded by these conditions and plicies once I have submitted this applications form.</span>      
+      </div>
+      <button class="button" type="button" data-toggle="modal" id="submit" data-target="#exampleModal">Create Customer</button>
+   
+
+      <!-- modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Description new user</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              
+            </div>
+            <div id="modal-body">              
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>    
+    
+
+
+    <script type="text/javascript">
+      $("button").click(function () {       
+          let str = `<ul>
+                <li>Tittle : ${$("#check-tittle").val()} </li>
+                <li>Last Name :${$("#lastName").val()}</li>
+                <li>First Name : ${$("#firstName").val()}</li>
+                <li>Phone Number : ${$("#phoneNumber").value()}</li>
+                <li>address : ${$("#address").val()} </li>                      
+              </ul> `
+          $("#modal_body").html(str);
+      });
+  </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+

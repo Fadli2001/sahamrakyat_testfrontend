@@ -1,7 +1,13 @@
 
 $("#submit").click(function () {  
-  let checkboxTittle = document.querySelector('.styled-checkbox:checked').value;   
- 
+  let checkboxTittle ;
+  let el = document.querySelector('.styled-checkbox:checked');   
+  if(el != null) {    
+    checkboxTittle = el.value
+  }else{
+    checkboxTittle = "";
+  }
+
   const lastName = $("#lastName").val();
   const firstName = $("#firstName").val();
   const phoneNumber = $("#phoneNumber").val();
@@ -10,9 +16,13 @@ $("#submit").click(function () {
   const province = $("#province").val();
   const emailAddress = $("#emailAddress").val();
   const birthDate = $("#birthDate").val();  
-  const lineInformation = document.querySelector('.line-information:checked').value;
-
-
+  let lInformation;
+  let inf = document.querySelector('.line-information:checked');
+  if(inf != null) {    
+    lInformation = el.value
+  }else{
+    lInformation = "";
+  }
   const str = `<h4>You Have Entered</h4>
   <table class = "modal-confirmation">
   <tr>
@@ -53,7 +63,7 @@ $("#submit").click(function () {
   </tr>
   <tr>
     <td>use of Information </td>
-    <td>: ${lineInformation}</td>
+    <td>: ${lInformation}</td>
   </tr>
 </table>
   `;

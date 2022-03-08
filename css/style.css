@@ -145,7 +145,7 @@ section .title p{
 
 .number{
   display: flex;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .code-number{

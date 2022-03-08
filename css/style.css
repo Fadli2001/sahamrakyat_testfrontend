@@ -300,3 +300,7 @@ input:checked + .slider:before {
 .modal-body li {
   list-style-type: none;
 }
+
+.modal-confirmation tr td{
+  padding:5px;
+}

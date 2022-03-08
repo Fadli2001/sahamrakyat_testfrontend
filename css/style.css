@@ -4,6 +4,11 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.star{
+  color: red;
+  font-size: 1.5em;
+}
+
 header{
   height: 150px;
   background-color: rgb(255, 225, 0);
@@ -87,8 +92,7 @@ section .title p{
 
 }
 .form-control{
-  margin-top: 5px;
-    display: block;
+    margin-top: 5px;    
     width: 100%;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
@@ -124,11 +128,37 @@ section .title p{
   flex: 40%;       
 }
 
-.phone-number-content{
-  display:flex;
-
+.phone-number{
+  margin-top: 10px;
+  margin-left: 25px;
 }
 
+.phone-number label{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-number{
+  display:flex;
+}
+
+
+.number{
+  display: flex;
+  margin-left: 4rem;
+}
+
+.code-number{
+  align-items: center;
+  padding: 0.40rem;  
+  margin-top: 4px;
+  margin-bottom: 0;  
+  color: #495057;  
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 5px 0 0 5px;
+
+}
 
 .address{
   margin: 40px 0;
@@ -152,10 +182,6 @@ section .title p{
 
 .country .form-content .birth{
   display: flex;
-}
-
-.country .form-content .birth-content input{
-  width:80%;
 }
 
 .privacy-note{

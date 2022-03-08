@@ -32,23 +32,23 @@
           <p>Title</p>         
           <label class="container">
             <div class="check-box">
-              <input class="styled-checkbox" id="mrs" type="checkbox" value="Mrs">
+              <input class="styled-checkbox" id="check-tittle" type="checkbox" value="Mrs">
               <label for="mrs">Mrs</label>
             </div>
             <div class="check-box">
-              <input class="styled-checkbox" id="ms" type="checkbox" value="Ms">
+              <input class="styled-checkbox" id="check-tittle" type="checkbox" value="Ms">
               <label for="ms">Ms</label>
             </div>
             <div class="check-box">
-              <input class="styled-checkbox" id="mdm" type="checkbox" value="Mdm">
+              <input class="styled-checkbox" id="check-tittle" type="checkbox" value="Mdm">
               <label for="mdm">Mdm</label>
             </div>
             <div class="check-box">
-              <input class="styled-checkbox" id="mr" type="checkbox" value="Mr">
+              <input class="styled-checkbox" id="check-tittle" type="checkbox" value="Mr">
               <label for="mr">Mr</label>
             </div>            
             <div class="check-box">
-              <input class="styled-checkbox" id="dr" type="checkbox" value="Dr">
+              <input class="styled-checkbox" id="check-tittle" type="checkbox" value="Dr">
               <label for="dr">Dr</label>
             </div>
           </label>
@@ -57,21 +57,28 @@
       <div class="form content">
           <form>
             <div class="last-name form-content">
-              <label for="">Last name</label>
+              <label for="">Last name <span class="star">*</span></label>
               <input class="form-control" type="text" placeholder="Last Name" id="lastName" name="lastName">
             </div>
             <div class="first-name form-content">
-              <label for="">First name</label>
+              <label for="">First name <span class="star">*</span></label>
               <input class="form-control" type="text" placeholder="First Name" id="firstName" name="firstName">            
             </div>       
-            <div class="phone-number form-content">
-              <label>Mobile Phone Number</label>
-              <div class="phone-number-content">                
-                <div class="input-group mb-3">               
-                  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="phoneNumber">
-                </div>
+            <div class="phone-number">
+              <label>Mobile Phone Number <span class="star">*</span></label>
+              <div class="form-number">
+                <select id="country" name="country">
+                  <option value="" disabled selected>d</option>
+                  <option value="au"></option>              
+                </select>   
+                  <div class="number">
+                    <div class="code-number">
+                      +62
+                    </div>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">                
+                  </div>                             
               </div>
-            </div>       
+            </div>                                          
           </form>
       </div>
       <div class="address">
@@ -86,12 +93,8 @@
           <div class="country">
             <div class="form-content">
               <label for="">Country/Location</label>
-              <select class="form-control" id="country" name="country">
-                <option value="" disabled selected>Country/Location</option>
-                <option value="au">HONG KONG SAR</option>
-                <option value="ca">MACAU SAR</option>
-                <option value="usa">CHINA</option>
-                <option value="usa">AFGHANISTAN</option>                
+              <select class="form-control" id="countries" name="countries">
+                <option disabled selected>Select Country/loction</option>               
                 </select>
             </div>
             <div class="form-content">
@@ -111,9 +114,7 @@
                 <div class="birth-content">
                   <label for="">Date of birth</label>
                   <input class="form-control" type="date">
-                </div>
-                
-                
+                </div>                                
             </div>
           </div>
         </form>
@@ -193,9 +194,10 @@
                 <li>Phone Number : ${$("#phoneNumber").value()}</li>
                 <li>address : ${$("#address").val()} </li>                      
               </ul> `
-          $("#modal_body").html(str);
+          $("#modal-body").html(str);
       });
   </script>
+    <script src="js/api.js" ></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
